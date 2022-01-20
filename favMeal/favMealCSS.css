@@ -1,0 +1,187 @@
+body {
+  font-family: "Rubik", sans-serif;
+  background-color: #cddeff;
+}
+
+/*--------------------------------------------------------------*/
+/* IMPORTANT SECTION:
+  PRESS CTRL+F AND TYPE FOLLOWING  NAMES TO NAVIGATE TO THESE SECTIONS
+  --------------------------------------------------------------
+  A] HEADING CONTAINER
+  --------------------------------------------------------------
+  B] MEALS CONTAINER
+  --------------------------------------------------------------
+  C] MEAL INFORMATION
+  --------------------------------------------------------------
+  D] MEADIA QUERY
+  --------------------------------------------------------------
+*/
+/*--------------------------------------------------------------*/
+
+/*----------------------------------------------------------
+// HEADING CONTAINER
+-------------------------------------------------------------*/
+.heading-title {
+  width: 100%;
+  height: 10vh;
+  font-size: 3vw;
+  text-align: center;
+  color: #676fa3;
+  margin-bottom: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.heading-title > img {
+  width: 10%;
+  height: 100%;
+}
+
+/*----------------------------------------------------------
+// MEALS CONTAINER
+-------------------------------------------------------------*/
+.meals-container {
+  width: 98vw;
+  height: auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+/*----------------------------------------------------------
+// MEAL INFORMATION
+-------------------------------------------------------------*/
+.meal-info {
+  width: 24%;
+  height: 40vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin-right: 1%;
+  background-color: #eef2ff;
+  margin-bottom: 10px;
+  border-radius: 5px;
+  color: white;
+}
+
+.meal-info:hover {
+  box-shadow: 0px 0px 10px 1px rgb(72, 120, 209);
+}
+
+.meal-img {
+  width: 100%;
+  height: 60%;
+  border-radius: 5px;
+  overflow: hidden;
+}
+
+.meal-img > a {
+  width: 100%;
+  height: 100%;
+}
+
+.meal-img > a > img {
+  width: 100%;
+  height: 100%;
+}
+
+.meal-name {
+  font-size: 200%;
+  font-weight: bold;
+  height: 15%;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+  padding-left: 5px;
+  color: rgb(41, 41, 41);
+  cursor: context-menu;
+}
+
+.meal-details {
+  height: 10%;
+  display: flex;
+  justify-content: space-between;
+  padding: 0 5px;
+  color: grey;
+}
+
+.fa-heart {
+  color: #c8c8c8;
+  cursor: pointer;
+}
+
+.meal-area {
+  padding-left: 5px;
+  padding-bottom: 5px;
+  color: grey;
+}
+
+.no-meal-container {
+  width: 100%;
+  height: 80vh;
+  background-color: #676fa3;
+  border-radius: 5px;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 2vw;
+}
+
+/*----------------------------------------------------------
+// MEADIA QUERY
+-------------------------------------------------------------*/
+
+@media screen and (max-width: 950px) {
+  .heading-title {
+    font-size: 5vw;
+  }
+
+  .heading-title > img {
+    width: 20%;
+  }
+
+  .meals-container {
+    width: 97vw;
+  }
+  .meal-info {
+    width: 32%;
+  }
+}
+
+@media screen and (max-width: 750px) {
+  .heading-title {
+    font-size: 5vw;
+  }
+
+  .heading-title > img {
+    width: 20%;
+  }
+
+  .meals-container {
+    width: 96vw;
+  }
+
+  .meal-info {
+    width: 48%;
+  }
+}
+
+@media screen and (max-width: 430px) {
+  .heading-title {
+    font-size: 7vw;
+  }
+
+  .heading-title > img {
+    width: 20%;
+  }
+
+  .meals-container {
+    width: 93vw;
+  }
+
+  .meal-info {
+    width: 98%;
+  }
+}

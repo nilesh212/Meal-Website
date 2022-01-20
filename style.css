@@ -1,0 +1,261 @@
+body {
+  font-family: "Rubik", sans-serif;
+  background-color: #cddeff;
+}
+
+/*--------------------------------------------------------------*/
+/* IMPORTANT SECTION:
+  PRESS CTRL+F AND TYPE FOLLOWING  NAMES TO NAVIGATE TO THESE SECTIONS
+  --------------------------------------------------------------
+  A] HEADING CONTAINER
+  --------------------------------------------------------------
+  B] SEARCH MEAL
+  --------------------------------------------------------------
+  C] FAVOURITE BUTTON
+  --------------------------------------------------------------
+  D] MEALS CONTAINER
+  --------------------------------------------------------------
+  E] MEAL INFORMATION
+  --------------------------------------------------------------
+  F] MEADIA QUERY
+  --------------------------------------------------------------
+*/
+/*--------------------------------------------------------------*/
+
+/*----------------------------------------------------------
+// HEADING CONTAINER
+-------------------------------------------------------------*/
+.container {
+  display: flex;
+  justify-content: space-between;
+  height: 10vh;
+  margin: 20px 0px;
+  align-items: center;
+}
+
+.container > img {
+  width: 6vw;
+  height: 100%;
+}
+
+/*----------------------------------------------------------
+// SEARCH MEAL
+-------------------------------------------------------------*/
+
+.search-meal {
+  width: 40vw;
+  height: 4vh;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#input-meal {
+  width: 70%;
+  height: 100%;
+  border-radius: 5px;
+  border: 1px solid rgb(84, 176, 233);
+  font-size: 1vw;
+  outline-color: royalblue;
+}
+
+.search-button {
+  width: 20%;
+  height: 100%;
+  font-size: 1.2vw;
+  color: white;
+  background-color: royalblue;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.search-button:hover {
+  box-shadow: 0px 0px 10px 1px royalblue;
+}
+
+/*----------------------------------------------------------
+// FAVOURITE BUTTON
+-------------------------------------------------------------*/
+.fav-button {
+  width: 12%;
+  height: 40%;
+  font-size: 1.2vw;
+  color: white;
+  background-color: hotpink;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.fav-button:hover {
+  box-shadow: 0px 0px 10px 1px hotpink;
+}
+
+/*----------------------------------------------------------
+// MEALS CONTAINER
+-------------------------------------------------------------*/
+.meals-container {
+  width: 98.3vw;
+  height: auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+/*----------------------------------------------------------
+// MEAL INFORMATION
+-------------------------------------------------------------*/
+.meal-info {
+  width: 24%;
+  height: 40vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin-right: 1%;
+  background-color: #eef2ff;
+  margin-bottom: 10px;
+  border-radius: 5px;
+  color: white;
+}
+
+.meal-info:hover {
+  box-shadow: 0px 0px 10px 1px rgb(72, 120, 209);
+}
+
+.meal-img {
+  width: 100%;
+  height: 60%;
+  border-radius: 5px;
+  overflow: hidden;
+}
+
+.meal-img > a {
+  width: 100%;
+  height: 100%;
+}
+
+.meal-img > a > img {
+  width: 100%;
+  height: 100%;
+}
+
+.meal-name {
+  font-size: 200%;
+  font-weight: bold;
+  height: 15%;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+  padding-left: 5px;
+  color: rgb(41, 41, 41);
+  cursor: context-menu;
+}
+
+.meal-details {
+  height: 10%;
+  display: flex;
+  justify-content: space-between;
+  padding: 0 5px;
+  color: grey;
+}
+
+.fa-heart {
+  color: #c8c8c8;
+  cursor: pointer;
+}
+
+.meal-area {
+  padding-left: 5px;
+  padding-bottom: 5px;
+  color: grey;
+}
+
+.no-meal-container {
+  width: 100%;
+  height: 80vh;
+  background-color: #676fa3;
+  border-radius: 5px;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 2vw;
+}
+
+/*----------------------------------------------------------
+// MEADIA QUERY
+-------------------------------------------------------------*/
+
+@media screen and (max-width: 950px) {
+  .container > img {
+    width: 8vw;
+  }
+  .meals-container {
+    width: 97vw;
+  }
+  .meal-info {
+    width: 32%;
+  }
+  .no-meal-container {
+    font-size: 4vw;
+  }
+}
+
+@media screen and (max-width: 750px) {
+  .container > img {
+    width: 10vw;
+  }
+
+  #input-meal {
+    font-size: 2vw;
+  }
+
+  .search-button {
+    font-size: 1.7vw;
+  }
+
+  .fav-button {
+    width: 20%;
+    font-size: 1.7vw;
+  }
+
+  .meals-container {
+    width: 96vw;
+  }
+
+  .meal-info {
+    width: 48%;
+  }
+
+  .no-meal-container {
+    font-size: 4vw;
+  }
+}
+
+@media screen and (max-width: 430px) {
+  .search-meal {
+    width: 60vw;
+  }
+
+  #input-meal {
+    font-size: 3vw;
+  }
+
+  .search-button {
+    font-size: 2.7vw;
+  }
+
+  .fav-button {
+    width: 30%;
+    font-size: 3vw;
+  }
+
+  .meals-container {
+    width: 93vw;
+  }
+
+  .meal-info {
+    width: 98%;
+  }
+}

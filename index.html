@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="10000x10000"
+      href="./images/logo-2.png"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nunito:wght@700;900&family=Rubik&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
+      integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>Meal</title>
+  </head>
+  <body>
+    <div class="container">
+      <img src="./images/pngegg (23).png" alt="Meal Logo" />
+      <div class="search-meal">
+        <input
+          type="text"
+          name="search_meal"
+          id="input-meal"
+          placeholder="Search Meal Here"
+        />
+        <input type="submit" class="search-button" value="Search" />
+      </div>
+
+      <input type="submit" class="fav-button" value="Your Favourites" />
+    </div>
+    <div class="meals-container"></div>
+    <div class="no-meal-container">
+      Ooops!! No Such Meal exists in our database.
+    </div>
+    <script src="app.js"></script>
+  </body>
+</html>
