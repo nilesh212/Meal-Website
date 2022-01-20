@@ -138,7 +138,7 @@ function searchMeal(mealName) {
   xhr.open(
     "get",
     `https://www.themealdb.com/api/json/v1/1/search.php?s=${mealName}`,
-    false
+    true
   );
   xhr.send();
 }
