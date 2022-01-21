@@ -27,10 +27,8 @@ xhr.onload = function () {
   else {
     for (let meal of resJSON.meals) {
       let myFavStorage = localStorage.getItem("myFav");
-
       let isFav = "no";
-
-      if (myFavStorage.length > 2) {
+      if (myFavStorage && myFavStorage.length > 2) {
         myFavStorage = JSON.parse(myFavStorage);
         for (let favMeal in myFavStorage) {
           if (meal.idMeal == favMeal) {
@@ -126,7 +124,8 @@ xhr.onload = function () {
 
         if (addFav.getAttribute("fav") == "no") {
           let myFavJSON = localStorage.getItem("myFav");
-          if (myFavJSON.length > 2) myFav = JSON.parse(myFavJSON);
+          if (myFavStorage && myFavJSON.length > 2)
+            myFav = JSON.parse(myFavJSON);
           myFav[meal.idMeal] = addFav.innerHTML;
           localStorage.setItem("myFav", JSON.stringify(myFav));
 
