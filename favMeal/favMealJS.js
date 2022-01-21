@@ -24,7 +24,7 @@ let myFavStorage = localStorage.getItem("myFav");
 // DISPLAY FAVOURITE MEALS
 -------------------------------------------------------------*/
 // Check Number of Meals
-if (myFavStorage.length > 2) {
+if (myFavStorage && myFavStorage.length > 2) {
   noFavMeal();
 
   myFavStorage = JSON.parse(myFavStorage);
@@ -87,7 +87,7 @@ if (myFavStorage.length > 2) {
 // DISPLAY NO FAVOURITE BOX
 -------------------------------------------------------------*/
 function noFavMeal() {
-  if (localStorage.getItem("myFav").length > 2) {
+  if (myFavStorage && myFavStorage.length > 2) {
     noMealContainer.style.display = "none";
   } else {
     noMealContainer.style.display = "flex";
