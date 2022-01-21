@@ -1,6 +1,10 @@
 body {
   font-family: "Rubik", sans-serif;
   background-color: #cddeff;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
 }
 
 /*--------------------------------------------------------------*/
@@ -26,6 +30,7 @@ body {
 // HEADING CONTAINER
 -------------------------------------------------------------*/
 .container {
+  width: 100%;
   display: flex;
   justify-content: space-between;
   height: 10vh;
@@ -100,7 +105,7 @@ body {
   height: auto;
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;
+  justify-content: space-evenly;
 }
 
 /*----------------------------------------------------------
@@ -112,7 +117,6 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  margin-right: 1%;
   background-color: #eef2ff;
   margin-bottom: 10px;
   border-radius: 5px;
