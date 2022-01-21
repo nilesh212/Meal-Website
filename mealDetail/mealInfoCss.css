@@ -1,6 +1,10 @@
 body {
   font-family: "Rubik", sans-serif;
   background-color: #cddeff;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
 }
 
 /*--------------------------------------------------------------*/
@@ -37,8 +41,8 @@ body {
   height: auto;
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  margin-right: 1%;
+  justify-content: space-evenly;
+  /* margin-right: 1%; */
   background-color: #eef2ff;
   border-radius: 5px;
 }
