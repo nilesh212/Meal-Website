@@ -7,7 +7,7 @@ This website is used for searching meal name and get more  information about mea
 * To view Favourite meals just click on Your Favourite button.
 * To know more information about any meal, click on their image.
 
-User can also make any meal using recipe steps and required ingredients, which is given in the information page.
+User can try to cook any meal using recipe steps and required ingredients given in the information page of that meal.
 
 ### Prerequisites
 * A Browser
