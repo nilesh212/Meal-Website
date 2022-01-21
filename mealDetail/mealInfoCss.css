@@ -104,6 +104,7 @@ body {
 
 .ingredients-list {
   font-size: 1vw;
+  overflow:hidden;
 }
 
 .meal-recipe {
