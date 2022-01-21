@@ -9,8 +9,8 @@ This website is used for searching meal name and get more  information about mea
 
 User can also make any meal using recipe steps and required ingredients, which is given in the information page.
 
-<h3>Prerequisites</h3>
+### Prerequisites
 * A Browser
 
-<h3>Link:</h3>
+### Link
 https://nilesh212.github.io/Meal-Website/
