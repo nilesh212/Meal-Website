@@ -87,7 +87,8 @@ if (myFavStorage && myFavStorage.length > 2) {
 // DISPLAY NO FAVOURITE BOX
 -------------------------------------------------------------*/
 function noFavMeal() {
-  if (myFavStorage && myFavStorage.length > 2) {
+  let myFavMeal = localStorage.getItem("myFav");
+  if (myFavMeal && myFavMeal.length > 2) {
     noMealContainer.style.display = "none";
   } else {
     noMealContainer.style.display = "flex";
