@@ -78,16 +78,7 @@ function searchMeal(mealName) {
 
       for (let meal of resJSON.meals) {
         // Check favourite meal
-//         let myFavStorage = localStorage.getItem("myFav");
         let isFav = "no";
-//         if (myFavStorage.length > 2) {
-//           myFavStorage = JSON.parse(myFavStorage);
-//           for (let favMeal in myFavStorage) {
-//             if (meal.idMeal == favMeal) {
-//               isFav = "yes";
-//             }
-//           }
-//         }
 
         let mealInfo = document.createElement("div");
         mealInfo.className = `meal-info id-${meal.idMeal}`;
@@ -115,18 +106,10 @@ function searchMeal(mealName) {
           let myFav = {};
 
           if (addFav.getAttribute("fav") == "no") {
-//             let myFavJSON = localStorage.getItem("myFav");
-//             if (myFavJSON.length > 2) myFav = JSON.parse(myFavJSON);
-//             myFav[meal.idMeal] = addFav.innerHTML;
-//             localStorage.setItem("myFav", JSON.stringify(myFav));
 
             addFav.setAttribute("fav", "yes");
             setFav.style.color = "#FF4342";
           } else if (addFav.getAttribute("fav") == "yes") {
-//             myFav = JSON.parse(localStorage.getItem("myFav"));
-//             delete myFav[meal.idMeal];
-//             localStorage.setItem("myFav", JSON.stringify(myFav));
-
             addFav.setAttribute("fav", "no");
             setFav.style.color = "#c8c8c8";
           }
