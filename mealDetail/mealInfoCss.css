@@ -45,6 +45,7 @@ body {
   /* margin-right: 1%; */
   background-color: #eef2ff;
   border-radius: 5px;
+  overflow-wrap:break-word;
 }
 
 .meal-name {
@@ -104,7 +105,6 @@ body {
 
 .ingredients-list {
   font-size: 1vw;
-  text-overflow:ellipsis;
 }
 
 .meal-recipe {
